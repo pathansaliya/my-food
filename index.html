@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Best Food Delivery Service</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+	<nav>
+		<h2 id="logo">DELICIOUS</h2>
+		<ul id="navlinks">
+			<li><a href="#">HOME</a></li>
+			<li><a href="#services">SERVICES</a></li>
+			<li><a href="#client">CLIENTS</a></li>
+			<li><a href="#contactus">CONTACT</a></li>
+		</ul>
+		<span id="searchbar">
+			<input type="text" placeholder="Search Food Items">
+			<button>Go</button>
+		</span>
+
+		<div class="menubtn" onclick="navbar()">
+			<div id="l1"></div>
+			<div id="l2"></div>
+			<div id="l3"></div>
+		</div>
+	</nav>
+
+	<div class="content">
+		<div>
+			<h1>Welcome to my Website</h1>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation.
+	     	</p>
+			<button>Order Now</button>
+		</div>
+	</div>
+</header>
+
+<!-- Service Section -->
+<section class="service" id="services">
+	<h1>OUR SERVICES</h1>
+	<div class="row">
+		<div class="service-column">
+			<img src="images/pizza.png">
+			<h2>Food Ordering</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. 
+			</p>
+		</div>
+		<div class="service-column">
+			<img src="images/foodplate.png">
+			<h2>Bulk Ordering</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.
+			</p>
+		</div>
+		<div class="service-column">
+			<img src="images/fooddelivery.png">
+			<h2>Fast Delivery</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.
+			</p>
+		</div>
+	</div>
+</section>
+
+<!-- Our Clients Section -->
+<section class="clients" id="client">
+	<h1>OUR CLIENTS</h1>
+	<div class="client-row">
+		<img src="images/apple.png">
+		<img src="images/skype.png">
+		<img src="images/hp.png">
+		<img src="images/microsoft.png">
+	</div>
+</section>
+
+<section class="contact" id="contactus">
+	<h1>CONTACT US</h1>
+	<div class="form">
+		<form>
+			<input type="text" placeholder="Your Name" required><br>
+			<input type="email" placeholder="Email ID" required><br>
+			<input type="number" placeholder="Phone No." required><br>
+			<textarea placeholder="Leave Your Message" required></textarea><br>
+			<button>SEND MESSAGE</button>
+		</form>
+	</div>
+</section>
+
+<!-- footer section -->
+<footer>
+	<p>Copyrights &copy; 2022 https://www.MyOnlineMeal.com - All rights reserved</p>
+</footer>
+
+
+<script type="text/javascript">
+	function navbar(){
+		if(l2.style.opacity == "0"){
+			l2.style.opacity = "1";
+			l1.style.transform = `rotate(${0}deg)`;
+			l3.style.transform = `rotate(${0}deg)`;
+			navlinks.style.top = "-100vh";
+		}
+		else{
+			l2.style.opacity = "0";
+			l1.style.transform = `rotate(${42}deg)`;
+			l3.style.transform = `rotate(${-42}deg)`;
+			navlinks.style.top = "0";
+		}
+	}
+</script>
+</body>
+</html>
